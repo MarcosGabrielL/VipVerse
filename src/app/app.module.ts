@@ -22,6 +22,11 @@ import { HomeComponent } from './components/views/home/home.component';
 import { EmailConfirmComponent } from './components/template/email-confirm/email-confirm.component';
 import { PasswordRecoveryComponent } from './components/template/password-recovery/password-recovery.component';
 import { PasswordLockScreenComponent } from './components/template/password-lock-screen/password-lock-screen.component';
+import { Erro404Component } from './components/template/erro404/erro404.component';
+import { ExplorerComponent } from './components/views/explorer/explorer.component';
+import { PerfilComponent } from './components/views/perfil/perfil.component';
+import { AsideHomeComponent } from './components/template/aside-home/aside-home.component';
+import { NavHomeComponent } from './components/template/nav-home/nav-home.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +49,12 @@ import { PasswordLockScreenComponent } from './components/template/password-lock
     HomeComponent,
     EmailConfirmComponent,
     PasswordRecoveryComponent,
-    PasswordLockScreenComponent
+    PasswordLockScreenComponent,
+    Erro404Component,
+    ExplorerComponent,
+    PerfilComponent,
+    AsideHomeComponent,
+    NavHomeComponent
   ],
   imports: [
     BrowserModule,

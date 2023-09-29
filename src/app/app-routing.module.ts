@@ -9,18 +9,23 @@ import { PasswordRecoveryComponent } from './components/template/password-recove
 import { PasswordLockScreenComponent } from './components/template/password-lock-screen/password-lock-screen.component';
 import { FeedComponent } from './components/views/feed/feed.component';
 import { PortfolioComponent } from './components/views/portfolio/portfolio.component';
+import { Erro404Component } from './components/template/erro404/erro404.component';
+import { ExplorerComponent } from './components/views/explorer/explorer.component';
+import { PerfilComponent } from './components/views/perfil/perfil.component';
 
 const routes: Routes = [
 
 { path: '', component: PortfolioComponent, pathMatch: 'full'},
 { path: 'home/usuario', component: HomeComponent, pathMatch: 'full'},
 { path: 'home/feed', component: FeedComponent, pathMatch: 'full'},
-{ path: 'auth', component: LoginComponent, pathMatch: 'full'},
+{ path: 'home/explorer', component: ExplorerComponent, pathMatch: 'full'},
+{ path: 'home/perfil', component: PerfilComponent, pathMatch: 'full'},
+{ path: 'auth/entrar', component: LoginComponent, pathMatch: 'full'},
 { path: 'auth/cadastro', component: SigninComponent, pathMatch: 'full'},
 { path: 'auth/email/confirm', component: EmailConfirmComponent, pathMatch: 'full'},
 { path: 'auth/password-recovery', component: PasswordRecoveryComponent, pathMatch: 'full'},
 { path: 'auth/password-lock-screen', component: PasswordLockScreenComponent, pathMatch: 'full'},
-                  
+{ path: '**', pathMatch: 'full',  component: Erro404Component }
   ];
 
 @NgModule({
